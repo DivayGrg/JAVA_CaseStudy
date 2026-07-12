@@ -1,9 +1,9 @@
 package Task52_DecisionMakingControlStatement_CaseStudy;
 
-public class CheckinVotingEligibility {
+public class LoginValidation {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	
 
 	}
 
