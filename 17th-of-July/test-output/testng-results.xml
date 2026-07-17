@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-07-17T14:28:39 IST" name="Default suite" finished-at="2026-07-17T14:29:19 IST" duration-ms="40236">
+    <groups>
+    </groups>
+    <test started-at="2026-07-17T14:28:39 IST" name="Default test" finished-at="2026-07-17T14:29:19 IST" duration-ms="40236">
+      <class name="DataDrivenTesting.CSVFile.Testing.CSVFileReading">
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenTesting.CSVFile.Testing.CSVFileReading@6c6cb480]" started-at="2026-07-17T14:28:39 IST" name="setup" finished-at="2026-07-17T14:28:47 IST" duration-ms="8515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DDTestingBlog()[pri:0, instance:DataDrivenTesting.CSVFile.Testing.CSVFileReading@6c6cb480]" started-at="2026-07-17T14:28:48 IST" name="DDTestingBlog" finished-at="2026-07-17T14:29:19 IST" duration-ms="31210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DDTestingBlog -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DataDrivenTesting.CSVFile.Testing.CSVFileReading@6c6cb480]" started-at="2026-07-17T14:29:19 IST" name="tearDown" finished-at="2026-07-17T14:29:19 IST" duration-ms="389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DataDrivenTesting.CSVFile.Testing.CSVFileReading -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
