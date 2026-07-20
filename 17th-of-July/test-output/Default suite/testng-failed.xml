@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DropDownElement.Handling_DropDown">
+      <class name="Task75AzureDevOps.spicejet5thelement">
         <methods>
-          <include name="SetUp"/>
-          <include name="DropDownList"/>
+          <include name="spicejet"/>
         </methods>
-      </class> <!-- DropDownElement.Handling_DropDown -->
+      </class> <!-- Task75AzureDevOps.spicejet5thelement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
