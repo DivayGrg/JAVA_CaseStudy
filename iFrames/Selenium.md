@@ -1,0 +1,1 @@
+Automation Testing SlelniumSelenium is a open source automation testing suiteSuite means combination of more than one tool**Components of Selenium**1. Selenium Web driver2. Selenium IDE3. Selenium Grid

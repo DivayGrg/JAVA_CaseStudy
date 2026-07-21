@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="webdriver.commands.FindElementByLinks"/>
+      <class name="com.SeleniumWebDriver.Locators.Demo.ClassNameTestDemo"/>
+      <class name="webdriver.commands.DifferentBrowsers"/>
+      <class name="com.SeleniumWebDriver.Locators.Demo.IDNameXpath"/>
+      <class name="Iframes.Iframes_MultipleFrame"/>
+      <class name="webdriver.commands.BrowserCommands"/>
+      <class name="DropDownElement.Handling_DropDown"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
