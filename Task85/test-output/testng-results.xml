@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-07-24T08:32:09 IST" name="Suite" finished-at="2026-07-24T08:32:24 IST" duration-ms="15666">
+    <groups>
+    </groups>
+    <test started-at="2026-07-24T08:32:09 IST" name="Test" finished-at="2026-07-24T08:32:24 IST" duration-ms="15666">
+      <class name="DataDrivenTesting.CSVFile.Testing.CSVFileReading">
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenTesting.CSVFile.Testing.CSVFileReading@10683d9d]" started-at="2026-07-24T08:32:17 IST" name="setup" finished-at="2026-07-24T08:32:18 IST" duration-ms="941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DDTestingBlog()[pri:0, instance:DataDrivenTesting.CSVFile.Testing.CSVFileReading@10683d9d]" started-at="2026-07-24T08:32:18 IST" name="DDTestingBlog" finished-at="2026-07-24T08:32:20 IST" duration-ms="1784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DDTestingBlog -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DataDrivenTesting.CSVFile.Testing.CSVFileReading@10683d9d]" started-at="2026-07-24T08:32:20 IST" name="tearDown" finished-at="2026-07-24T08:32:20 IST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DataDrivenTesting.CSVFile.Testing.CSVFileReading -->
+      <class name="DataDrivenTesting.CSVFile.Testing.ChaseLoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenTesting.CSVFile.Testing.ChaseLoginTest@1f2586d6]" started-at="2026-07-24T08:32:14 IST" name="setup" finished-at="2026-07-24T08:32:15 IST" duration-ms="1044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testChaseBankLoginFailure()[pri:0, instance:DataDrivenTesting.CSVFile.Testing.ChaseLoginTest@1f2586d6]" started-at="2026-07-24T08:32:15 IST" name="testChaseBankLoginFailure" finished-at="2026-07-24T08:32:17 IST" duration-ms="1422" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test crashed unexpectedly: .\TestData\chase_data.csv (The system cannot find the file specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test crashed unexpectedly: .\TestData\chase_data.csv (The system cannot find the file specified)
+at org.testng.Assert.fail(Assert.java:111)
+at DataDrivenTesting.CSVFile.Testing.ChaseLoginTest.testChaseBankLoginFailure(ChaseLoginTest.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChaseBankLoginFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DataDrivenTesting.CSVFile.Testing.ChaseLoginTest@1f2586d6]" started-at="2026-07-24T08:32:17 IST" name="tearDown" finished-at="2026-07-24T08:32:17 IST" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DataDrivenTesting.CSVFile.Testing.ChaseLoginTest -->
+      <class name="DataDrivenTesting.CSVFile.Testing.OrangeHRMLoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenTesting.CSVFile.Testing.OrangeHRMLoginTest@2f4948e4]" started-at="2026-07-24T08:32:09 IST" name="setup" finished-at="2026-07-24T08:32:11 IST" duration-ms="2854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testOrangeHRMLogin()[pri:0, instance:DataDrivenTesting.CSVFile.Testing.OrangeHRMLoginTest@2f4948e4]" started-at="2026-07-24T08:32:11 IST" name="testOrangeHRMLogin" finished-at="2026-07-24T08:32:14 IST" duration-ms="2711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrangeHRMLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DataDrivenTesting.CSVFile.Testing.OrangeHRMLoginTest@2f4948e4]" started-at="2026-07-24T08:32:14 IST" name="tearDown" finished-at="2026-07-24T08:32:14 IST" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DataDrivenTesting.CSVFile.Testing.OrangeHRMLoginTest -->
+      <class name="DataDrivenTesting.CSVFile.Testing.AltoroLoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:DataDrivenTesting.CSVFile.Testing.AltoroLoginTest@3fc2959f]" started-at="2026-07-24T08:32:20 IST" name="setup" finished-at="2026-07-24T08:32:21 IST" duration-ms="987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAltoroLogin()[pri:0, instance:DataDrivenTesting.CSVFile.Testing.AltoroLoginTest@3fc2959f]" started-at="2026-07-24T08:32:21 IST" name="testAltoroLogin" finished-at="2026-07-24T08:32:24 IST" duration-ms="2975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAltoroLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:DataDrivenTesting.CSVFile.Testing.AltoroLoginTest@3fc2959f]" started-at="2026-07-24T08:32:24 IST" name="tearDown" finished-at="2026-07-24T08:32:24 IST" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- DataDrivenTesting.CSVFile.Testing.AltoroLoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

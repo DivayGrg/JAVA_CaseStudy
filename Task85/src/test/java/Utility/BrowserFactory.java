@@ -1,36 +1,34 @@
 package Utility;
 
+import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BrowserFactory {
-	static WebDriver driver;
-	public static WebDriver startBrowser(WebDriver driver,String browserName, String AppUrl)
-	{
-		if(browserName.equalsIgnoreCase("Chrome")|| browserName.equalsIgnoreCase("GC")||browserName.equalsIgnoreCase("Google Chrome")) 
-		{
-			driver=new ChromeDriver();
-		}
-		else if(browserName.equalsIgnoreCase("Edge")|| browserName.equalsIgnoreCase("EG")||browserName.equalsIgnoreCase("Microsoft Edge")) 
-		{
-			driver=new EdgeDriver();
-		}
-		else if(browserName.equalsIgnoreCase("FireFox")|| browserName.equalsIgnoreCase("FF")||browserName.equalsIgnoreCase("Mozilla Firefox")) 
-		{
-			driver=new FirefoxDriver();
-		}
-		else 
-		{
-			System.out.print("Sorry we do not support this browser");
-		}
-		driver.manage().window().maximize();
-		driver.get(AppUrl);
-		return driver;
-	}
-public static void closeBrowser(WebDriver driver)
-{
-	driver.quit();
-}
+
+    // Removed the appUrl parameter from here
+    public static WebDriver startApplication(WebDriver driver, String browserName) {
+        
+        if (browserName.equalsIgnoreCase("Chrome")) {
+            driver = new ChromeDriver();
+        } else if (browserName.equalsIgnoreCase("Firefox")) {
+            driver = new FirefoxDriver();
+        } else if (browserName.equalsIgnoreCase("Edge")) {
+            driver = new EdgeDriver();
+        }
+
+        driver.manage().window().maximize();
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); 
+        
+        return driver;
+    }
+
+    public static void quitBrowser(WebDriver driver) {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }
