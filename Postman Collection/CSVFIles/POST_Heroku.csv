@@ -1,0 +1,5 @@
+﻿firstname,lastname,totalprice,depositpaid
+Divay,Garg,2000,FALSE
+Binit,Singh,2000,TRUE
+Kartik,,3000,TRUE
+Harshit,Rana,4000,TRUE

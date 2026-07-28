@@ -5,7 +5,7 @@ import org.junit.Test;
 public class ExceptionsExampleTest {
 	@Test
 	public void catchANullPointerException() {
-		Integer age = null;
+		Integer age=99;
 		String ageAsString;
 		try {
 			ageAsString = age.toString();

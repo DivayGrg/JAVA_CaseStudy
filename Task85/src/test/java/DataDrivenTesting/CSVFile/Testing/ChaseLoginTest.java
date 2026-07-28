@@ -18,7 +18,7 @@ public class ChaseLoginTest extends BaseTest {
         try {
             driver.get(config.getUrl("ChaseUrl"));
             
-            List<String[]> csvData = CSVDataReader.readCsvData("chase_data.csv");
+            List<String[]> csvData = CSVDataReader.readCsvData("practicetest.csv");
             ChaseLoginPage loginPage = new ChaseLoginPage(driver);
 
             for (String[] row : csvData) {

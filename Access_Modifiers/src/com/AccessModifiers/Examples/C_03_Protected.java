@@ -1,13 +1,13 @@
 package com.AccessModifiers.Examples;
 
 public class C_03_Protected {
-	C_03_Protected obj=new C_03_Protected();
-	int output=obj.z;
-	System.out.println("Value of Z is " + output);
-	obj.ProtectedMethod();
-	
-//	public static void main(String[] args)
-//	{
-//		
-//	}
+
+	public static void main(String[] args) {
+		// B is a package-private class defined in C_02_Default.java
+		B obj = new B();
+		int output = obj.z; // protected member accessible within same package
+		System.out.println("Value of Z is " + output);
+		obj.ProtectedMethod();
+	}
+
 }

@@ -1,7 +1,7 @@
 package com.SeleniumDriver.Alerts;
-import org.openqa.selenium.chrome.*;
 
-import static org.testng.Assert.assertEquals;
+
+
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
