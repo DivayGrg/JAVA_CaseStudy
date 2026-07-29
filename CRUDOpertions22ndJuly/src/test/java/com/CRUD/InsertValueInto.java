@@ -12,6 +12,7 @@ public class InsertValueInto {
 	@Test
 	public void establishDataBaseConnection() throws ClassNotFoundException, SQLException{
 		//Database connection details
+		
 		String databaseURL ="jdbc:mysql://localhost:3306/SeleniumAutomation";
 		String user="root";
 		String password="983703";
@@ -19,7 +20,6 @@ public class InsertValueInto {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		System.out.println("Connecting to Database");
 		connection=DriverManager.getConnection(databaseURL,user,password);
-		
 		//Checking if the connection was made successfully
 		if(connection==null)
 		{
@@ -33,6 +33,7 @@ public class InsertValueInto {
 		Statement smt=connection.createStatement();
 		String query="insert into book_detl values('Bq001','abc','BKL','Ian','XYZ','S','2005',700.0);";
 		smt.execute(query);
+		
 		connection.close();
 	}
 }
